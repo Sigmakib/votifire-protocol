@@ -49,7 +49,7 @@ app.post('/sendData', async (req, res) => {
         });
 
     } catch (error) {
-        res.status(400).send(error.message);
+        res.status(400).send("err: ip or port offline or crushed! contact admin of that server.");
     }
 });
 
